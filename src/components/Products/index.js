@@ -14,7 +14,7 @@ function Products() {
         }
         fetchAPI();
     }, []);
-    console.log(products);
+
     return (
         <>
             <div className="products">
