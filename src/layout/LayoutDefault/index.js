@@ -1,6 +1,7 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
-import { FaCartArrowDown } from "react-icons/fa";
+import { NavLink, Outlet } from "react-router-dom";
+
 import "./LayoutDefault.scss";
+import CartMini from "../../components/CartMini";
 
 function LayoutDefault() {
     return (
@@ -35,7 +36,7 @@ function LayoutDefault() {
                     </ul>
                 </nav>
                 <div className="layout-default__cart">
-                    <Link to="/cart"><FaCartArrowDown /></Link>
+                    <CartMini />
                 </div>
             </header>
             <main className="layout-default__main"><Outlet /></main>

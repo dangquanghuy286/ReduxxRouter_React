@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { addToCart } from "../../actions/cart";
+import { addToCart, updateQuantity } from "../../actions/cart";
 function ProductsItem(props) {
     const { item } = props;
 
@@ -8,7 +8,7 @@ function ProductsItem(props) {
     const cart = useSelector(state => state.cartReducer);
     const handleAddtoCart = () => {
         if (cart.some(itemCart => itemCart.id === item.id)) {
-            console.log("UPDATE");
+            dispatch(updateQuantity(item.id));
 
         } else {
             dispatch(addToCart(item.id, item))

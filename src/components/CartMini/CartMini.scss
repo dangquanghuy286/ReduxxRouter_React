@@ -1,0 +1,22 @@
+.cart-mini {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; // Màu mặc định
+
+    &:hover {
+        color: #ff6600; // Màu khi hover
+    }
+
+    svg {
+        font-size: 24px; // Kích thước icon
+        margin-right: 5px; // Khoảng cách giữa icon và số lượng
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 16px;
+        position: relative;
+        top: -10px; // Dịch lên một chút
+    }
+}
