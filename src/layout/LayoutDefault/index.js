@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { FaCartArrowDown } from "react-icons/fa";
 import "./LayoutDefault.scss";
 
 function LayoutDefault() {
@@ -33,6 +34,7 @@ function LayoutDefault() {
                         </li>
                     </ul>
                 </nav>
+                <div className="layout-default__cart"><FaCartArrowDown /></div>
             </header>
             <main className="layout-default__main"><Outlet /></main>
             <footer className="layout-default__footer">Copy right @ 2025</footer>

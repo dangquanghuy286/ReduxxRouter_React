@@ -64,6 +64,7 @@
                     display: block; // Hiển thị liên kết dưới dạng block
                     color: white; // Đặt màu chữ mặc định cho submenu là trắng
                     text-align: left; // Căn trái nội dung văn bản
+                    transition: 0.3s all;
 
                     // Chỉ thay đổi màu của liên kết khi hover trực tiếp vào liên kết đó
                     &:hover {
