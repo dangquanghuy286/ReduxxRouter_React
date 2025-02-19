@@ -1,7 +1,10 @@
+import Products from "../../components/Products";
 function Home() {
     return (
         <>
-            Page Home
+            <h2>Danh sách sản phẩm</h2>
+            <Products />
+
         </>
     )
 }

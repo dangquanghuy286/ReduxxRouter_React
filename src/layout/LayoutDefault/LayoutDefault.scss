@@ -7,6 +7,13 @@
         align-items: center; // Căn giữa các phần tử theo trục dọc
         justify-content: space-between; // Chia khoảng cách đều giữa các phần tử (đẩy đầu và cuối về mép)
         padding: 10px 20px; // Thêm khoảng cách bên trong: 10px trên/dưới, 20px trái/phải
+        position: sticky;
+        /* Giúp phần tử "dính" vào một vị trí khi cuộn */
+        top: 0;
+        /* Khi cuộn đến, phần tử sẽ dừng lại ở đỉnh trang */
+        z-index: 999;
+        /* Đảm bảo phần tử luôn hiển thị trên các thành phần khác */
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     }
 
     // Phần menu của layout
