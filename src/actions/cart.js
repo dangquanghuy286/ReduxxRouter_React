@@ -14,3 +14,15 @@ export const updateQuantity = (id, quantity = 1) => {
 
     }
 }
+export const deleteItem = (id) => {
+    return {
+        type: "DELETE_QUANTITY",
+        id: id
+    }
+}
+export const deleteALL = () => {
+    return {
+        type: "DELETE_ALL",
+
+    }
+}

@@ -1,5 +1,5 @@
 const cartReducer = (state = [], action) => {
-    const newState = [...state]
+    let newState = [...state]
     switch (action.type) {
         case "ADD_TO_CART":
             return [
@@ -13,9 +13,15 @@ const cartReducer = (state = [], action) => {
         case "UPDATE_QUANTITY":
             const itemUpdate = newState.find(item => item.id === action.id);
 
-            itemUpdate.quantity++;
+            itemUpdate.quantity += action.quantity;
 
             return newState;
+        case "DELETE_QUANTITY":
+            newState = newState.filter(item => item.id !== action.id)
+            itemUpdate.quantity += action.quantity;
+            return newState;
+        case "DELETE_ALL":
+            return [];
         default:
             return state;
     }
